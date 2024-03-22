@@ -1,9 +1,8 @@
-let rec last l =
-  match l with
+let rec last = function
   | [] -> []
-  | [x] -> [x]
+  | [ x ] -> [ x ]
   | h :: t -> last t
-  
-let _ = last ["a" ; "b" ; "c" ; "d"]
-let _ = last [1]
+
+let _ = last [ "a"; "b"; "c"; "d" ]
+let _ = last [ 1 ]
 let _ = last []
